@@ -1,31 +1,24 @@
 import React from "react";
-const Room = (props) => {
-    return (  
-        <>
-    
-        <div className="container">
-         <div className="card">
-            
-         <a href="#"><img src={`../${props.img}`} className="card--image" alt="pics" /></a>  
-           
-            <div className="card--stats">
+import RData from "../RData";
+import RoomCard from "../Components/RoomCard";
 
-             <p><span className="bold"> Host:</span> {props.Owner}</p>
-            
-           
-
-          
-            <p className="card--title">{props.location}</p>
-            <span className="gray"> FROM: {props.TimeFrame}</span>
-
-            <p className="card--price"><span className="bold">From: ${props.Price}</span> / person</p>
-           
-            </div>
-        </div>
-</div>
-
-        </>
+const Room = () => {
+  const cards = RData.map((item) => {
+    return (
+      <RoomCard
+        key={item.id}
+        img={item.coverImg}
+        location={item.title}
+        rating={item.stats.rating}
+        // reviewCount={item.stats.reviewCount}
+        Owner={item.Owner}
+        TimeFrame={item.TimeFrame}
+        Price={item.price}
+      />
     );
-}
- 
+  });
+
+  return <section className="cards-list">{cards}</section>;
+};
+
 export default Room;

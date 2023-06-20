@@ -1,20 +1,20 @@
 import React from "react";
+import SpaCard from "../Components/SpaCard";
+import SData from "../SData";
 
-const Spa = (props) => {
-    return ( 
-        <>
-      <div className="Continer">
-       <div className="cards">
-       
-        <a href="#"><img src={`../${props.img}`} className="card--imag" alt="pics" /></a>
-        <p> Service: {props.service}</p>
-        <p className="card--price"><span className="bold">From:${props.Price}</span>/service</p>
+const Spa = () => {
+  const care = SData.map((spa) => {
+    return (
+      <SpaCard
+        key={spa.id}
+        img={spa.Img}
+        service={spa.service}
+        Price={spa.price}
+      />
+    );
+  });
 
-       </div>
-       </div>
-        </>
-       
-     );
-}
- 
+  return <section className="dishes">{care}</section>;
+};
+
 export default Spa;

@@ -1,20 +1,20 @@
 import React from "react";
+import FData from "../FData";
+import FoodCard from "../Components/FoodCard";
 
-const Food = (props) => {
- 
-  
-    return ( 
-        <>
-        <div className="Continer">
-       <div className="cards">
-        <a href="#"> <img src={props.img} className="card--imag"/></a>
-        <p> Name: {props.Name}</p>
-        <p className="card--price"><span className="bold">From: ${props.Price}</span> /plate</p>
+const Food = () => {
+  const foods = FData.map((dish) => {
+    return (
+      <FoodCard
+        key={dish.id}
+        img={dish.img}
+        Name={dish.name}
+        Price={dish.price}
+      />
+    );
+  });
 
-       </div>
-       </div>
-        </>
-     );
-}
- 
+  return <section className="dishes">{foods}</section>;
+};
+
 export default Food;
