@@ -1,172 +1,116 @@
-/* .hero{
-    background-image: url('./images/bitch.jpg');
-} */
-*{
-    font-family: 'Poppins',sans-serif;
-}
-section {
-    padding: 20px;
-/* display: flex; */
+* {
+  font-family: "Titillium Web", sans-serif;
+  margin: auto;
 }
 
-.hero--photo {
-    max-width: 400px;
-    align-self: center;
-    border-radius: 10px;
-    padding: 0;
-}
-.hero--text {
-    margin-top: 0;
-    text-align: end;
-}
-.blue-one{
-    max-width: 300px;
-   float: right;
-   margin: 50px;
-   border-radius: 10px;
-   position: relative;
-
+.Second-nav {
+  max-height: 100%;
+  max-width: 100%;
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  white-space: nowrap;
+  display: flex;
 }
 
-.img{
-       max-width: 400px;
-       padding: 15px;
-      
-       /* display: inline-block; */
-        border-radius: 10px;
-        flex: 33.33%;
-        
-      }
-      .Second-nav{
-        max-height: 100%;
-        max-width: 100%;
-        text-decoration: none;
-        /* color: #fff; */
-        padding: 0.7rem 1rem;
-        white-space: nowrap;
-      
-      }
-      .li{
-           color: #fff;
-    display: inline-block;
-    justify-content: space-between; 
-    text-decoration: none;
-    color: whitesmoke;
-    padding: 0.7rem 1rem;
-    white-space: nowrap;
-    margin: auto 90px;
-      }
-
-
-     /* .li:hover {
-      color:chartreuse;
-     } */
-
-     /* .contacts{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 40px;
-     }
-     .contact-card{
-        flex-basis: 225px;
-        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        padding: 13px;
-        padding-bottom: 20px;
-        background-color: white;
-     }
-     .img-size{
-    max-height: 900px;
-    max-width: 400px;  } */
-    
- 
-     
-
-    /* } 
-
-    
-
-
-    .container{
-        display: flex;
-       
-     
-       
-    }
-         
-        /* .card--image{
-            width:100%;
-            height: 276px;
-            width: 235px;
-            border-radius: 9px;
-            
-
-        } */
-        
-      .card--list{     
-       
-        display: flex; 
-        flex-direction:row;
-    }
-    
-    .card{
-        /* margin:10px;
-        width:175px;
-        font-size: 20px; */
-        width: 300px;
-        height: 300px;
-        gap:10px;
-        margin: 10px;
-   
-    }
-    
-    .card--image{
-        border-radius: 9px;
-        width:100%;
-        height: 276px;
-        /* width: 235px;  */
-      
-       
-    } 
-    
-    .bold {
-        font-weight: bold;
-    }
-    
-    .gray {
-        color:blueviolet;
-    }
-
-    .card--stats{
-    
-        align-items: center;
-    }
-    
-    /* Food.js Styling */
-
-
-    .Continer{
-        display: inline-block;
-        padding: 80px;
-        flex-wrap: wrap;
-    }
-
-    .cards{
-        margin:10px;
-        width:175px;
-        font-size: 20px;
-    }
-  
-.card--imag{
-    width:100%;
-    height: 276px;
-    width: 335px;
-    border-radius: 9px;
+.li {
+  color: #fff;
+  display: inline-block;
+  justify-content: space-between;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 0.7rem 1rem;
+  white-space: nowrap;
+  margin: auto 90px;
+  min-height: 0;
 }
-.dishes{
-    padding: 10px;
-    margin: 5px;
+
+.Second-nav .li:hover {
+  color: black;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+
+  color: black;
+  padding: 0px;
+}
+
+.header--image {
+  max-width: 100px;
+  margin-right: 6px;
+}
+
+.header--title {
+  font-size: 20px;
+  margin-right: auto;
+}
+
+.header--project {
+  /* font-size: 12px; */
+  padding-left: 80px;
+  font-weight: 500;
+}
+
+.extra {
+  justify-content: center;
+  margin-top: 0;
+  margin-left: 30%;
+  margin-top: 0;
+  /* max-width:400px; */
+  max-width: auto;
+  /* padding: auto; */
+  background-color: #fff7f7;
+  border-radius: 40px;
+}
+
+.extra li {
+  display: inline-block;
+  padding: 9px;
+  list-style: none;
+}
+
+.fa-globe {
+  padding-left: 30px;
+}
+
+.card-list {
+  margin-top: 50px;
+  display: flex;
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.starry {
+  max-height: 20px;
+  padding-left: 110px;
+}
+.card--stats {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  min-height: 0px;
+}
+
+.card--imag {
+  height: 266px;
+  width: 315px;
+  border-radius: 9px;
+}
+.bold {
+  font-weight: bold;
+  color: black;
+}
+
+.gray {
+  font-weight: 500;
+  color: gray;
+}
+.info {
+  padding: 3px;
 }

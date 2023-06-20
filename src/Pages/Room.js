@@ -10,15 +10,16 @@ const Room = () => {
         img={item.coverImg}
         location={item.title}
         rating={item.stats.rating}
-        // reviewCount={item.stats.reviewCount}
+        reviewCount={item.stats.reviewCount}
         Owner={item.Owner}
         TimeFrame={item.TimeFrame}
         Price={item.price}
+        details={item.description}
       />
     );
   });
 
-  return <section className="cards-list">{cards}</section>;
+  return <section className="card-list">{cards}</section>;
 };
 
 export default Room;

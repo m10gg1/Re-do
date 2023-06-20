@@ -9,12 +9,13 @@ const Spa = () => {
         key={spa.id}
         img={spa.Img}
         service={spa.service}
+        rating={spa.rating}
         Price={spa.price}
       />
     );
   });
 
-  return <section className="dishes">{care}</section>;
+  return <section className="card-list">{care}</section>;
 };
 
 export default Spa;

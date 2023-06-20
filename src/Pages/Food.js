@@ -10,11 +10,14 @@ const Food = () => {
         img={dish.img}
         Name={dish.name}
         Price={dish.price}
+        rating={dish.rating}
+        Timeframe={dish.TimeFrame}
+        distance={dish.distance}
       />
     );
   });
 
-  return <section className="dishes">{foods}</section>;
+  return <section className="card-list">{foods}</section>;
 };
 
 export default Food;
