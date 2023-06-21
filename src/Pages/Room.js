@@ -19,7 +19,7 @@ const Room = () => {
     );
   });
 
-  return <section className="card-list">{cards}</section>;
+  return <section className="card-list row">{cards}</section>;
 };
 
 export default Room;
