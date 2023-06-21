@@ -63,39 +63,39 @@ const rdata = [
     location: "Online",
     openSpots: 0,
   },
-  // {
-  //   id: 5,
-  //   title: "Texas, USA",
-  //   Owner: "Alex Sln",
-  //   description:
-  //   'I will share with you what I call ',
-  //   price: 132,
-  //   TimeFrame: "Jun 7-24",
-  //   coverImg: "bitch.jpg",
-  //   stats: {
-  //     rating: 2.5,
-  //     reviewCount: 8,
-  //   },
+  {
+    id: 5,
+    title: "Texas, USA",
+    Owner: "Alex Sln",
+    description:
+    'I will share with you what I call ',
+    price: 132,
+    TimeFrame: "Jun 7-24",
+    coverImg: "bitch.jpg",
+    stats: {
+      rating: 2.5,
+      reviewCount: 8,
+    },
 
-  //   location: "Online",
-  //   openSpots: 0,
-  // },
-  // {
-  //   id: 6,
-  //   title: "Paris,France",
-  //   Owner: "Alex Sln",
-  //   description:
-  //   'I will share with you what I call ',
-  //   price: 135,
-  //   TimeFrame: "Jun 7-24",
-  //   coverImg: "bitch.jpg",
-  //   stats: {
-  //     rating: 3.3,
-  //     reviewCount: 8,
-  //   },
+    location: "Online",
+    openSpots: 0,
+  },
+  {
+    id: 6,
+    title: "Paris,France",
+    Owner: "Alex Sln",
+    description:
+    'I will share with you what I call ',
+    price: 135,
+    TimeFrame: "Jun 7-24",
+    coverImg: "bitch.jpg",
+    stats: {
+      rating: 3.3,
+      reviewCount: 8,
+    },
 
-  //   location: "Online",
-  //   openSpots: 0,
-  // }
+    location: "Online",
+    openSpots: 0,
+  }
 ];
 export default rdata;

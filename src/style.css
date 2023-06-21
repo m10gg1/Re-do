@@ -1,6 +1,6 @@
 * {
   font-family: "Titillium Web", sans-serif;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .Second-nav {
@@ -77,18 +77,19 @@
 
 .card-list {
   margin-top: 50px;
-  display: flex;
+  /* display: flex; */
   padding: 20px;
 }
 
 .cards {
-  display: flex;
+  overflow: hidden;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 .starry {
-  max-height: 20px;
-  padding-left: 110px;
+  height: 20px;
+  /* padding-left: 110px; */
 }
 .card--stats {
   float: left;
@@ -97,10 +98,15 @@
   min-height: 0px;
 }
 
+.img-container {
+  height: 300px;
+  border-radius: 10px;
+}
 .card--imag {
-  height: 266px;
-  width: 315px;
-  border-radius: 9px;
+  height: 300px!important;
+  /* width: 315px; */
+  /* width: 100%; */
+  border-radius: 10px;
 }
 .bold {
   font-weight: bold;
